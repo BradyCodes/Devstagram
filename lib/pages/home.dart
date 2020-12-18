@@ -20,32 +20,8 @@ class _homeState extends State<home> {
         child: ListView(
           children: <Widget>[
             Post('John Smith', 'assets/assettest.png'),
-            // Padding(
-            //   padding: EdgeInsets.symmetric(horizontal: 15, vertical: 3),
-            // ),
-            // Container(
-            //   decoration: BoxDecoration(
-            //     borderRadius: BorderRadius.circular(15)
-            //   ),
-            //   child: Image.asset('assets/assettest.png'),
-            // ),
-
-
-
-
-
-
             Post('Jacod Johnson', 'assets/TerminalImage.png'),
             Post('Clara Deviod', 'assets/GithubImage.png'),
-
-
-
-
-
-
-
-
-
           ],
         ),
       ),

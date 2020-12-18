@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'heartbutton.dart';
 
 class Post extends StatelessWidget {
   String _name = 'John Smith';
@@ -8,6 +9,8 @@ class Post extends StatelessWidget {
     this._name = _name;
     this._path = _path;
   }
+
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -18,12 +21,7 @@ class Post extends StatelessWidget {
               backgroundColor: Colors.black,
             ),
             title: Text(_name),
-            trailing: IconButton(
-              icon: Icon(Icons.favorite_border),
-              onPressed: () {
-                print('ooooofff');
-              },
-            ),
+            trailing: HeartButton(),
           ),
         ),
         Padding(
@@ -37,3 +35,8 @@ class Post extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
