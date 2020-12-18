@@ -42,18 +42,18 @@ class _HomePageState extends State<HomePage> {
         items: [
           BottomNavigationBarItem(
             backgroundColor: Colors.white,
-            icon: Icon(Icons.add_a_photo),
-            title: Text('Upload a Photo')
+            icon: IconTheme(data: IconThemeData(color: Colors.black), child: Icon(Icons.add_a_photo)),
+            title: Text('')
             ),
           BottomNavigationBarItem(
             backgroundColor: Colors.white,
-            icon: Icon(Icons.home),
-            title: Text('Home')
+            icon: IconTheme(data: IconThemeData(color: Colors.black), child: Icon(Icons.home)),
+            title: Text('')
             ),
           BottomNavigationBarItem(
             backgroundColor: Colors.white,
-            icon: Icon(Icons.person),
-            title: Text('Your Account')
+            icon: IconTheme(data: IconThemeData(color: Colors.black), child: Icon(Icons.person)),
+            title: Text('')
             ),
         ],
         onTap: (index) {
