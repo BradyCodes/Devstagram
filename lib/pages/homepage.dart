@@ -2,6 +2,9 @@ import 'package:devstagram/pages/settingbutton.dart';
 import 'package:flutter/material.dart';
 import 'home.dart';
 import 'profile.dart';
+import 'Settings/home.dart';
+
+
 
 class HomePage extends StatefulWidget {
   @override
@@ -14,7 +17,7 @@ class _HomePageState extends State<HomePage> {
 
 
   final tabs = [
-    Center(child: Text('Upload a photo'),),
+    Text('Test'),
     home(),
     Profile(),
   ];
@@ -34,6 +37,19 @@ class _HomePageState extends State<HomePage> {
           backgroundColor: Colors.white,
           elevation: 0,
           title: Text(titletex[indx], style: TextStyle(color: Colors.black,)),  
+          actions: <Widget>[
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+              child: IconButton(
+                icon: Icon(Icons.settings, color: Colors.black), 
+                onPressed: () => {
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return SettingsHome();
+                  }))
+                }
+                ),
+            ),
+          ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: indx,

@@ -19,9 +19,9 @@ class _homeState extends State<home> {
       body: Center(
         child: ListView(
           children: <Widget>[
-            Post('John Smith', 'assets/assettest.png'),
-            Post('Jacod Johnson', 'assets/TerminalImage.png'),
-            Post('Clara Deviod', 'assets/GithubImage.png'),
+            Post('John Smith', 'assets/assettest.png', 'Check Out My New Code!'),
+            Post('Jacod Johnson', 'assets/TerminalImage.png', 'Can Anyone help me with my terminal error?'),
+            Post('Clara Deviod', 'assets/GithubImage.png', 'New Github Repo Up, Go Check It Out!'),
           ],
         ),
       ),

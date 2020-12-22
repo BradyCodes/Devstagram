@@ -4,10 +4,12 @@ import 'heartbutton.dart';
 class Post extends StatelessWidget {
   String _name = 'John Smith';
   String _path = 'assets/assettest.png';
+  String _caption = 'Check out my new Code!';
 
-  Post(String _name, String _path) {
+  Post(String _name, String _path, String _caption) {
     this._name = _name;
     this._path = _path;
+    this._caption = _caption;
   }
 
 
@@ -21,7 +23,7 @@ class Post extends StatelessWidget {
               backgroundColor: Colors.black,
             ),
             title: Text(_name),
-            trailing: HeartButton(),
+            trailing: HeartButton()
           ),
         ),
         Padding(
@@ -31,6 +33,13 @@ class Post extends StatelessWidget {
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(15)),
           child: Image.asset(_path)
         ),
+        Container(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: Align(alignment: Alignment.centerLeft, child: Text(_name + ':     ' + _caption, style: TextStyle(fontSize: 15),),),
+          )
+        ),
+        SizedBox(height: 100,),
       ],
     );
   }
